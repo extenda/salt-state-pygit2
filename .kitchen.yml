@@ -15,6 +15,5 @@ suites:
       state_top:
         base:
           '*':
-            - libgit2
             - pygit2
 

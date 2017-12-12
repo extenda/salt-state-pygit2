@@ -1,8 +1,9 @@
 include:
   - .libgit2
 
-pygit2-python-pip:
-  pkg.installed
+#pygit2-python-pip:
+#  pkg.installed:
+#    - name: python-pip
 
 pygit2-installed:
   pip.installed:

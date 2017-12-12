@@ -3,7 +3,7 @@
 
 libgit2-install-requirements:
   pkg.installed:
-    pkgs:
+    - pkgs:
       - git
       - make
       - automake
@@ -14,13 +14,15 @@ libgit2-install-requirements:
       - cmake
       - openssl-devel
       - libssh2-devel
+      - python-devel
 
 libgit2-clone-source:
   git.latest:
     - name: https://github.com/libgit2/libgit2
     - target: {{ clone_dir }}
     - depth: 1
-    - tag: v0.26.0
+    - rev: v0.26.0
+    - force_reset: True 
 
 libgit2-build-dir:
   file.directory:
@@ -47,7 +49,7 @@ libgit2-ldconfig:
   cmd.run:
     - name: ldconfig
     - onchanges:
-      - cmd: install-libgit2
+      - cmd: libgit2-make-install
 
 libgit2-linked-global:
   file.managed:

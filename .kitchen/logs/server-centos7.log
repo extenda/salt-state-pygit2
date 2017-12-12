@@ -1,0 +1,104 @@
+I, [2017-12-12T13:15:02.261201 #59789]  INFO -- server-centos7: -----> Creating <server-centos7>...
+I, [2017-12-12T13:15:03.764680 #59789]  INFO -- server-centos7: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2017-12-12T13:15:03.909339 #59789]  INFO -- server-centos7: ==> default: Box 'centos7' could not be found. Attempting to find and install...
+I, [2017-12-12T13:15:03.909471 #59789]  INFO -- server-centos7:     default: Box Provider: virtualbox
+I, [2017-12-12T13:15:03.909798 #59789]  INFO -- server-centos7:     default: Box Version: >= 0
+I, [2017-12-12T13:15:04.636911 #59789]  INFO -- server-centos7: ==> default: Box file was not detected as metadata. Adding it directly...
+I, [2017-12-12T13:15:04.637237 #59789]  INFO -- server-centos7: ==> default: Adding box 'centos7' (v0) for provider: virtualbox
+I, [2017-12-12T13:15:04.646560 #59789]  INFO -- server-centos7:     default: Downloading: centos7
+I, [2017-12-12T13:15:04.681286 #59789]  INFO -- server-centos7: [K[KAn error occurred while downloading the remote file. The error
+I, [2017-12-12T13:15:04.681342 #59789]  INFO -- server-centos7: message, if any, is reproduced below. Please fix this error and try
+I, [2017-12-12T13:15:04.681366 #59789]  INFO -- server-centos7: again.
+I, [2017-12-12T13:15:04.681386 #59789]  INFO -- server-centos7: 
+I, [2017-12-12T13:15:04.681404 #59789]  INFO -- server-centos7: Couldn't open file /Users/shayne/repos/clients/extenda/salt-state-pygit2/.kitchen/kitchen-vagrant/server-centos7/centos7
+E, [2017-12-12T13:15:04.719909 #59789] ERROR -- server-centos7: Create failed on instance <server-centos7>.
+E, [2017-12-12T13:15:04.720086 #59789] ERROR -- server-centos7: ------Exception-------
+E, [2017-12-12T13:15:04.720111 #59789] ERROR -- server-centos7: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2017-12-12T13:15:04.720124 #59789] ERROR -- server-centos7: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'centos7' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Box file was not detected as metadata. Adding it directly...
+==> default: Adding box 'centos7' (v0) for provider: virtualbox
+    default: Downloading: centos7
+[K[K
+STDERR: An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+Couldn't open file /Users/shayne/repos/clients/extenda/salt-state-pygit2/.kitchen/kitchen-vagrant/server-centos7/centos7
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2017-12-12T13:15:04.720142 #59789] ERROR -- server-centos7: ----------------------
+E, [2017-12-12T13:15:04.720155 #59789] ERROR -- server-centos7: ------Backtrace-------
+E, [2017-12-12T13:15:04.720169 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
+E, [2017-12-12T13:15:04.720186 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2017-12-12T13:15:04.720197 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/kitchen-vagrant-1.2.1/lib/kitchen/driver/vagrant.rb:435:in `run_command'
+E, [2017-12-12T13:15:04.720209 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/kitchen-vagrant-1.2.1/lib/kitchen/driver/vagrant.rb:382:in `run'
+E, [2017-12-12T13:15:04.720222 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/kitchen-vagrant-1.2.1/lib/kitchen/driver/vagrant.rb:466:in `run_vagrant_up'
+E, [2017-12-12T13:15:04.720237 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/kitchen-vagrant-1.2.1/lib/kitchen/driver/vagrant.rb:107:in `create'
+E, [2017-12-12T13:15:04.720251 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:469:in `public_send'
+E, [2017-12-12T13:15:04.720283 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:469:in `block in perform_action'
+E, [2017-12-12T13:15:04.720299 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:533:in `block in synchronize_or_call'
+E, [2017-12-12T13:15:04.720310 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:531:in `synchronize'
+E, [2017-12-12T13:15:04.720326 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:531:in `synchronize_or_call'
+E, [2017-12-12T13:15:04.720338 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:498:in `block in action'
+E, [2017-12-12T13:15:04.720352 #59789] ERROR -- server-centos7: /opt/chefdk/embedded/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2017-12-12T13:15:04.720364 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:497:in `action'
+E, [2017-12-12T13:15:04.720378 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:469:in `perform_action'
+E, [2017-12-12T13:15:04.720392 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:379:in `create_action'
+E, [2017-12-12T13:15:04.720477 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:368:in `block in transition_to'
+E, [2017-12-12T13:15:04.720492 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:367:in `each'
+E, [2017-12-12T13:15:04.720506 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:367:in `transition_to'
+E, [2017-12-12T13:15:04.720518 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-12-12T13:15:04.720530 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-12-12T13:15:04.720541 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-12-12T13:15:04.720553 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-12-12T13:15:04.720564 #59789] ERROR -- server-centos7: ----End Backtrace-----
+E, [2017-12-12T13:15:04.720574 #59789] ERROR -- server-centos7: ---Nested Exception---
+E, [2017-12-12T13:15:04.720585 #59789] ERROR -- server-centos7: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2017-12-12T13:15:04.720596 #59789] ERROR -- server-centos7: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'centos7' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Box file was not detected as metadata. Adding it directly...
+==> default: Adding box 'centos7' (v0) for provider: virtualbox
+    default: Downloading: centos7
+[K[K
+STDERR: An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+Couldn't open file /Users/shayne/repos/clients/extenda/salt-state-pygit2/.kitchen/kitchen-vagrant/server-centos7/centos7
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2017-12-12T13:15:04.720622 #59789] ERROR -- server-centos7: ----------------------
+E, [2017-12-12T13:15:04.720634 #59789] ERROR -- server-centos7: ------Backtrace-------
+E, [2017-12-12T13:15:04.720645 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
+E, [2017-12-12T13:15:04.720656 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2017-12-12T13:15:04.720668 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/kitchen-vagrant-1.2.1/lib/kitchen/driver/vagrant.rb:435:in `run_command'
+E, [2017-12-12T13:15:04.720678 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/kitchen-vagrant-1.2.1/lib/kitchen/driver/vagrant.rb:382:in `run'
+E, [2017-12-12T13:15:04.720688 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/kitchen-vagrant-1.2.1/lib/kitchen/driver/vagrant.rb:466:in `run_vagrant_up'
+E, [2017-12-12T13:15:04.720698 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/kitchen-vagrant-1.2.1/lib/kitchen/driver/vagrant.rb:107:in `create'
+E, [2017-12-12T13:15:04.720708 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:469:in `public_send'
+E, [2017-12-12T13:15:04.720718 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:469:in `block in perform_action'
+E, [2017-12-12T13:15:04.720728 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:533:in `block in synchronize_or_call'
+E, [2017-12-12T13:15:04.720738 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:531:in `synchronize'
+E, [2017-12-12T13:15:04.720748 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:531:in `synchronize_or_call'
+E, [2017-12-12T13:15:04.720758 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:498:in `block in action'
+E, [2017-12-12T13:15:04.720769 #59789] ERROR -- server-centos7: /opt/chefdk/embedded/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2017-12-12T13:15:04.720782 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:497:in `action'
+E, [2017-12-12T13:15:04.720793 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:469:in `perform_action'
+E, [2017-12-12T13:15:04.720803 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:379:in `create_action'
+E, [2017-12-12T13:15:04.720815 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:368:in `block in transition_to'
+E, [2017-12-12T13:15:04.720826 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:367:in `each'
+E, [2017-12-12T13:15:04.720836 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:367:in `transition_to'
+E, [2017-12-12T13:15:04.720847 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-12-12T13:15:04.720857 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-12-12T13:15:04.720868 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-12-12T13:15:04.720878 #59789] ERROR -- server-centos7: /Users/shayne/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-12-12T13:15:04.720894 #59789] ERROR -- server-centos7: ----End Backtrace-----
