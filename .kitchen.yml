@@ -3,7 +3,7 @@ driver:
   name: vagrant
 
 platforms:
-  - name: centos7
+  - name: centos-7.3
 
 provisioner:
   name: salt_solo
@@ -15,4 +15,6 @@ suites:
       state_top:
         base:
           '*':
+            - libgit2
             - pygit2
+
