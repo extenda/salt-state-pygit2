@@ -1,5 +1,5 @@
 include:
-  - ../libgit2
+  - .libgit2
 
 pygit2-python-pip:
   pkg.installed
