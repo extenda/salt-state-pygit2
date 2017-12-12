@@ -20,9 +20,8 @@ libgit2-clone-source:
   git.latest:
     - name: https://github.com/libgit2/libgit2
     - target: {{ clone_dir }}
-    - depth: 1
     - rev: v0.26.0
-    - force_reset: True 
+    - force_reset: True
 
 libgit2-build-dir:
   file.directory:

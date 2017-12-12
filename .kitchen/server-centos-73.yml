@@ -1,7 +1,0 @@
----
-hostname: 127.0.0.1
-port: '2200'
-username: vagrant
-ssh_key: "/Users/shayne/repos/clients/extenda/salt-state-pygit2/.kitchen/kitchen-vagrant/server-centos-73/.vagrant/machines/default/virtualbox/private_key"
-last_action: create
-last_error: Kitchen::ActionFailed
