@@ -1,0 +1,18 @@
+---
+driver:
+  name: vagrant
+
+platforms:
+  - name: centos7
+
+provisioner:
+  name: salt_solo
+  formula: pygit2
+
+suites:
+  - name: server
+    provisioner:
+      state_top:
+        base:
+          '*':
+            - pygit2
