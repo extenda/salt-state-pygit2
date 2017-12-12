@@ -1,9 +1,14 @@
+{% set pip-package = {
+    'CentOS': 'python2-pip',
+    'Amazon': 'python27-pip',
+}.get(grains.os) %}
+
 include:
   - .libgit2
 
 pygit2-python-pip:
  pkg.installed:
-   - name: python2-pip
+   - name: {{ pip-package }}
    - reload_modules: True
 
 pygit2-installed:
