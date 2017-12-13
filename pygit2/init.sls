@@ -14,3 +14,7 @@ pygit2-python-pip:
 pygit2-installed:
   pip.installed:
     - name: pygit2 == v0.26.0
+
+pygit2-shell-loader:
+  cmd.run:
+    - name: ldconfig -v
