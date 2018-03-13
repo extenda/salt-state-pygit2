@@ -1,0 +1,10 @@
+{% set packages = {
+    'CentOS': {
+        'pip': 'python2-pip',
+        'pythondevel': 'python-devel',
+    },
+    'Amazon': {
+        'pip': 'python27-pip',
+        'pythondevel': 'python27-devel',
+    }
+}.get(grains.os) %}

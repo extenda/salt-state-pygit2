@@ -1,5 +1,6 @@
 {% set clone_dir = "/opt/libgit2" %}
 {% set build_dir = clone_dir ~ "/_cmake" %}
+{% from "pygit2/os-map.jinja" import packages with context %}
 
 libgit2-install-requirements:
   pkg.installed:
@@ -14,7 +15,7 @@ libgit2-install-requirements:
       - cmake
       - openssl-devel
       - libssh2-devel
-      - python-devel
+      - {{ packages.pythondevel }}
 
 libgit2-clone-source:
   git.latest:

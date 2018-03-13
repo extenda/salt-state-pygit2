@@ -4,6 +4,7 @@ driver:
 
 platforms:
   - name: centos-7.3
+  - name: realreadme/amazon2016.09
 
 provisioner:
   name: salt_solo
